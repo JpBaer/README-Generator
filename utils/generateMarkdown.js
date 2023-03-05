@@ -65,6 +65,14 @@ function generateMarkdown(data) {
   
   ${renderLicenseSection(data.license)}
 
+  ## Table of Contents
+    * Description [#Description]
+    * Installation  [#Installation]
+    * Usage [#Usage]
+    * Contribution [#Contribution]
+    * Testing [#Testing]
+    * Contact [#Contact]
+
   ## Description
 
   ${data.description}
@@ -87,7 +95,7 @@ function generateMarkdown(data) {
 
   ## Contact
 
-  Github Username: ${data.username}
+  Github Username: ${data.username} /n
   Email: ${data.email}
 `;
 }
